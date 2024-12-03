@@ -69,19 +69,19 @@ journey
 
 ```mermaid
 quadrantChart
-    title Квадрант-граф функциональных возможностей системы
-    x-axis Простота использования --> Сложность использования
-    y-axis Ценность --> Низкая ценность
-    quadrant-1 Высокая ценность, простое использование
-    quadrant-2 Низкая ценность, простое использование
-    quadrant-3 Высокая ценность, сложное использование
-    quadrant-4 Низкая ценность, сложное использование
-    Регистрация пользователя: [0.9, 0.7]
-    Управление матчами: [0.8, 0.6]
-    Аналитика турниров: [0.7, 0.9]
-    Матчмейкинг: [0.6, 0.8]
-    Просмотр отчетов: [0.8, 0.4]
-    Прогнозирование результатов: [0.9, 0.9]
+    title Quadrant Chart of System Features
+    x-axis Ease of Use --> Complexity of Use
+    y-axis Value --> Low Value
+    quadrant-1 High value, easy to use
+    quadrant-2 Low value, easy to use
+    quadrant-3 High value, complex to use
+    quadrant-4 Low value, complex to use
+    User Registration: [0.9, 0.7]
+    Match Management: [0.8, 0.6]
+    Tournament Analytics: [0.7, 0.9]
+    Matchmaking: [0.6, 0.8]
+    Report Viewing: [0.8, 0.4]
+    Result Prediction: [0.9, 0.9]
 ```
 
 ### 4. Диаграмма истории разработки (Git Graph)
