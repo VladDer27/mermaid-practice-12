@@ -91,20 +91,49 @@ quadrantChart
 
 ```mermaid
 gitGraph
-  commit id: "Создание структуры проекта"
-  branch feature/user-service
-  commit id: "Реализован сервис пользователей"
-  branch feature/tournament-service
-  checkout feature/tournament-service
-  commit id: "Добавлен функционал управления турнирами"
-  branch feature/matchmaking-service
-  checkout feature/matchmaking-service
-  commit id: "Реализован матчмейкинг"
-  merge main
-  checkout feature/user-service
-  commit id: "Реализована регистрация команд"
-  merge main
-  branch feature/analytic-service
-  checkout feature/analytic-service
-  commit id: "Добавлен модуль аналитики"
-  merge main
+    commit id: "Initial commit - Setup project structure"
+    commit id: "Added tournament management service"
+    branch develop
+    checkout develop
+    commit id: "Implemented user registration functionality"
+    commit id: "Added tournament match management service"
+    checkout main
+    commit id: "Integrated game server connection (matchmaking)"
+    
+    checkout develop
+    branch feature/user-service
+    checkout feature/user-service
+    commit id: "Developed user registration microservice"
+    checkout develop
+
+    branch feature/tournament-service
+    checkout feature/tournament-service
+    commit id: "Developed tournament management microservice"
+    checkout develop
+
+    branch feature/matchmaking-service
+    checkout feature/matchmaking-service
+    commit id: "Developed matchmaking service"
+    checkout develop
+
+    branch feature/analytics-service
+    checkout feature/analytics-service
+    commit id: "Developed tournament analytics service"
+    checkout develop
+
+    branch feature/notification-service
+    checkout feature/notification-service
+    commit id: "Developed notification service"
+    checkout develop
+
+    checkout main
+    commit id: "Integrated all microservices into main"
+    checkout develop
+    merge feature/user-service id: "Merged user service"
+    merge feature/tournament-service id: "Merged tournament service"
+    merge feature/matchmaking-service id: "Merged matchmaking service"
+    merge feature/analytics-service id: "Merged analytics service"
+    merge feature/notification-service id: "Merged notification service"
+    commit id: "Final version with all microservices integrated"
+    commit id: "Bug fixes and optimizations"
+
